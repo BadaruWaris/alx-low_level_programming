@@ -2,15 +2,19 @@
 #include <string.h>
 
 /**
-* puts2 - prints every other character of a string
-* @str: string to print
+* puts_half - prints the second half of a string
+* @str: string to ptint
 */
-void puts2(char *str)
+void puts_half(char *str)
 {
-int length, i;
+int a, b, i;
 
-length = strlen(str);
-for (i = 0; i < length; i += 2)
+a = strlen(str);
+if (a % 2 == 1)
+b = a / 2 + 1;
+else
+b = a / 2;
+for (i = b; i < a; i++)
 _putchar(str[i]);
 _putchar('\n');
 }
