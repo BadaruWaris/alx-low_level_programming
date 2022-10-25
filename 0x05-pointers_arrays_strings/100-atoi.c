@@ -37,3 +37,7 @@ break;
 
 i++;
 }
+
+n *= sign;
+return (n);
+}
